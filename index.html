@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Rock, Paper, Scissors</title>
+        <link href="style.css" rel="stylesheet"></link>
+  </head>
+
+  <body onload="newGame()">
+
+    <h1 class="winner-text" id="winner-text">SELECT AN <br> OPTION</h1>
+    <h1 class="time-text" id="time-text"></h1>
+
+    <!-- This div is to include anything related to the title -->
+    <div>
+      <h1 class="titulo" id="titulo">ROCK, PAPER, SCISSORS</h1>
+    </div>
+
+    <!-- This div is to include the name of the player, the score, the options
+      to select -->
+    <div class="game">
+      <!-- Player -->
+      <div class="users">
+        <h2 class="players" id="player1-name">PLAYER</h2>
+        <h3 class="score" id="player1-score">SCORE: 0<h3>
+        <img class="selected-option" id="player1-selected-img" src="Question.jpg" alt="A question mark"></img>
+        <div id="player1-option-buttons">
+          <button class="options" id="player1-rock-btn"><img class="button-img" src="Rock.jpg" alt="rock"></img></button>
+          <button class="options" id="player1-paper-btn"><img class="button-img" src="Paper.jpg" alt="paper"></img></button>
+          <button class="options" id="player1-scissors-btn"><img class="button-img" src="Scissors.jpg" alt="scissors"></img></button>
+        </div>
+      </div>
+
+      <!-- Computer -->
+      <div class="users">
+        <h2 class="players" id="player2-name">COMPUTER</h2>
+        <h3 class="score" id="player2-score">SCORE: 0<h3>
+        <img class="selected-option" id="player2-selected-img" src="Question.jpg" alt="A question mark"></img>
+        <div class="player2-option-buttons" id="player2-option-buttons">
+          <button class="options" id="player2-rock-btn"><img class="button-img" src="Rock.jpg" alt="rock"></img></button>
+          <button class="options" id="player2-paper-btn"><img class="button-img" src="Paper.jpg" alt="paper"></img></button>
+          <button class="options" id="player2-scissors-btn"><img class="button-img" src="Scissors.jpg" alt="scissors"></img></button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- This div is to start a new game and show the highest scores -->
+    <div class="new-game-box">
+      <button class="new-game-btn" id="new-game-btn">New Game</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <!-- Modal title -->
+      <div>
+        <h3>NEW GAME SETTINGS:</h3>
+      </div>
+      <!-- Modal inputs: number of players and names -->
+      <div>
+        <p>Number of players: </p>
+        <input type="radio" name="playerNumber" id="radio-btn-1" checked>1</input>
+        <input type="radio" name="playerNumber" id="radio-btn-2">2</input>
+        <p>Player 1 Name:</p>
+        <input type="textbox" id="player1-name-input"></input>
+        <p>Player 2 Name:</p>
+        <input type="textbox" id="player2-name-input" value="COMPUTER" disabled></input>
+      </div>
+      <!-- Modal accept button -->
+      <div>
+        <button class="accept-btn" id="accept-btn">Accept</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+
+  </body>
+
+</html>

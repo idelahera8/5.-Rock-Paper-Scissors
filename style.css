@@ -1,0 +1,143 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: green;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////// TITLE DIV //////////////////////////////// */
+/*////////////////////////////////////////////////////////////////////////////*/
+
+
+.titulo {
+  color: gold;
+  font-size: 5rem;
+  text-align: center;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/* ////////////////////////////// GAME DIV ////////////////////////////////// */
+/*////////////////////////////////////////////////////////////////////////////*/
+
+
+/* The whole regions with the game being played. Divided in 2 columns */
+.game {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  margin-top: -3em;
+}
+
+/* Each of the two columns */
+.users {
+  text-align: center;
+}
+
+/* The name of each player */
+.players {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* The score of each player */
+.score {
+  font-size: 2rem;
+  color: white;
+}
+
+/* The image showing the selected option */
+.selected-option {
+  height: 22rem;
+  width: 22rem;
+  bcakground-color: white;
+}
+
+/* The buttons with the 3 options to select */
+.options {
+  margin: 1rem 2rem;
+  padding:0;
+  width:auto;
+  height:auto
+}
+
+.options:disabled{
+  background-color: white;
+}
+
+/* The size of the image within the option buttons */
+.button-img {
+  width: 5rem;
+  height: 5rem;
+  margin:0;
+  padding:0
+}
+
+/* The buttons for player 2 */
+.player2-option-buttons {
+  display: none;
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/* //////////////////////////// NEW GAME DIV //////////////////////////////// */
+/*////////////////////////////////////////////////////////////////////////////*/
+
+
+/* The div with the new game buttons */
+.new-game-box {
+  text-align: center;
+}
+
+/* The button for starting a new game */
+.new-game-btn {
+  width: 9rem;
+  height: 3rem;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/* ///////////////////////// COMMUNICATION TEXT ///////////////////////////// */
+/*////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Text that shows who won */
+.winner-text {
+  font-size:4rem;
+  color: gold;
+  position: absolute;
+  top: 28rem;
+  left: 48rem;
+}
+
+/* Text that shows a countdown to the reveal of the cards */
+.time-text {
+  font-size:16rem;
+  color: gold;
+  position: absolute;
+  top: 13rem;
+  left: 60rem;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/* ///////////////////////////////// MODAl ////////////////////////////////// */
+/*////////////////////////////////////////////////////////////////////////////*/
+
+.modal {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 40%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  background-color: white;
+}
+
+.accept-btn {
+  margin-top: 1rem;
+}
