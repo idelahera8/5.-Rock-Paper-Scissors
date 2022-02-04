@@ -61,7 +61,7 @@ let player1Score = 0;
 let player2Score = 0;
 
 // Selected option
-let player1Option = "";
+let player1Option = "It's me";
 let player2Option = "Hello";
 
 // Options (only used if player 2 is computer)
