@@ -62,7 +62,7 @@ let player2Score = 0;
 
 // Selected option
 let player1Option = "";
-let player2Option = "";
+let player2Option = "Hello";
 
 // Options (only used if player 2 is computer)
 let options = ["Rock", "Paper", "Scissors"];
