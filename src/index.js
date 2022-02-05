@@ -68,7 +68,7 @@ let player2Option = "";
 let options = ["Rock", "Paper", "Scissors"];
 
 // Matrix with image urls
-let images = ["Rock.jpg", "Paper.jpg", "Scissors.jpg"];
+let images = ["../res/Rock.jpg", "../res/Paper.jpg", "../res/Scissors.jpg"];
 
 // Flag defining who has won the round
 let player1Win = false;
@@ -181,8 +181,8 @@ function resetAll() {
 
 // Set the images back to the original state
 function resetImages() {
-  player1SelectedImage.src = "Question.jpg";
-  player2SelectedImage.src = "Question.jpg";
+  player1SelectedImage.src = "../res/Question.jpg";
+  player2SelectedImage.src = "../res/Question.jpg";
 }
 
 // After a winner is selected for the round and a new round is about to begin,
